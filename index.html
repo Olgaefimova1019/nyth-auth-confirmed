@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, nofollow" />
-<title>NYTH</title>
+<title>KYRNARC</title>
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
@@ -77,8 +77,8 @@
   <div class="card">
     <div class="badge" id="badge">&#10003;</div>
     <h1 id="title">Email подтверждён</h1>
-    <p id="subtitle">Аккаунт NYTH успешно подтверждён. Вернитесь в приложение и нажмите &laquo;Я подтвердила email&raquo;.</p>
-    <a class="button" id="open-app" href="nyth://login-callback/">Открыть NYTH</a>
+    <p id="subtitle">Аккаунт KYRNARC успешно подтверждён. Вернитесь в приложение и нажмите &laquo;Я подтвердила email&raquo;.</p>
+    <a class="button" id="open-app" href="nyth://login-callback/">Открыть KYRNARC</a>
     <div class="close-note" id="close-note">Эту вкладку можно закрыть.</div>
   </div>
   <script>
@@ -87,15 +87,15 @@
         ru: {
           success: {
             title: "Email подтверждён",
-            subtitle: "Аккаунт NYTH успешно подтверждён. Вернитесь в приложение и нажмите «Я подтвердила email».",
-            button: "Открыть NYTH",
+            subtitle: "Аккаунт KYRNARC успешно подтверждён. Вернитесь в приложение и нажмите «Я подтвердила email».",
+            button: "Открыть KYRNARC",
             close: "Эту вкладку можно закрыть.",
             badge: "✓",
           },
           problem: {
             title: "Не удалось подтвердить email",
-            subtitle: "Ссылка могла истечь или уже была использована. Вернитесь в NYTH и запросите новое письмо.",
-            button: "Открыть NYTH",
+            subtitle: "Ссылка могла истечь или уже была использована. Вернитесь в KYRNARC и запросите новое письмо.",
+            button: "Открыть KYRNARC",
             close: "Эту вкладку можно закрыть.",
             badge: "!",
           },
@@ -103,15 +103,15 @@
         en: {
           success: {
             title: "Email confirmed",
-            subtitle: "Your NYTH account has been confirmed. Return to the app and tap “I’ve confirmed my email”.",
-            button: "Open NYTH",
+            subtitle: "Your KYRNARC account has been confirmed. Return to the app and tap “I’ve confirmed my email”.",
+            button: "Open KYRNARC",
             close: "You can close this tab.",
             badge: "✓",
           },
           problem: {
             title: "Email confirmation issue",
-            subtitle: "The link may have expired or already been used. Return to NYTH and request a new email.",
-            button: "Open NYTH",
+            subtitle: "The link may have expired or already been used. Return to KYRNARC and request a new email.",
+            button: "Open KYRNARC",
             close: "You can close this tab.",
             badge: "!",
           },
@@ -133,7 +133,7 @@
       var state = hasError ? "problem" : "success";
       var text = copy[lang][state];
 
-      document.title = "NYTH";
+      document.title = "KYRNARC";
       document.getElementById("badge").textContent = text.badge;
       document.getElementById("title").textContent = text.title;
       document.getElementById("subtitle").textContent = text.subtitle;
